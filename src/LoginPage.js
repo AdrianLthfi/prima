@@ -95,7 +95,7 @@ const LoginPage = () => {
 
                 <footer>
                     <p>Copyright 2025 © PT Prima Karya Sarana Sejahtera</p>
-                    <span>All rights reserved. | Kebijakan Privasi</span>
+                    <span>All rights reserved. | <a href="https://recruitment.ptpkss.com/id/terms-condition">Kebijakan Privasi</a></span>
                 </footer>
             </div>
         </div>

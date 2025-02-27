@@ -33,12 +33,11 @@ body {
 
 .login-card {
     background-color: rgba(255, 255, 255, 0.277);
-    padding: 88px;
-    padding-bottom: 45px;
+    padding: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.327);
     border-radius: 8px;
-    width: 86%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 700px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -59,43 +58,50 @@ body {
 .input-group {
     margin-bottom: 15px;
     text-align: left;
+    margin-top: -10px;
 }
 
 .input-group-cap {
     margin-bottom: 15px;
     text-align: left;
-    padding-right: 280px;
+    padding-right: 200px;
+    margin-left: 30px;
+    margin-top: -10px;
 }
 
 .input-group-cap label {
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
-    font-weight: bold;
+    font-weight: 600;
+    margin-left: 0;
 }
 
 .input-group-cap input {
-    width: 100%;
+    width: 70%; 
     padding: 12px;
     margin-top: 13px;
     border-radius: 4px;
     border: 1px solid #d2d2d2;
     font-size: 15.5px;
-    padding-right: 10px;
+    padding-right: 1px;
+    margin-left: 0; 
 }
 
 .input-group label {
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
-    font-weight: bold;
+    font-weight: 600;
+    margin-left: 60px;
 }
 
 .input-group input {
-    width: 100%;
+    width: 85%;
     padding: 12px;
     margin-top: 13px;
     border-radius: 4px;
     border: 1px solid #d2d2d2;
     font-size: 15.5px;
+    margin-left: 60px;
 }
 
 button.login-btn {
@@ -104,10 +110,11 @@ button.login-btn {
     border: none;
     padding: 10px 20px;
     font-size: 20px;
-    width: 60%;
+    width: 50%;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 button.login-btn:hover {
@@ -120,6 +127,7 @@ button.login-btn:hover {
     font-size: 14px;
     color: #767676;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 .forgot-password:hover {
@@ -132,54 +140,39 @@ button.login-btn:hover {
 }
 
 .pkss-logo {
-    width: 250px;
+    width: 200px;
     height: auto;
     position: absolute;
-    top: -80px;
-    right: 1070px;
+    top: -20px;
+    right: 830px;
 }
 
 .logo1 {
-    width: 320px;
+    width: 280px;
     height: auto;
-    margin-top: -60px;
+    margin-top: 30px;
 }
 
 .logo2 {
-    width: 250px;
+    width: 200px;
     height: auto;
     position: absolute;
-    top: -80px;
-    right: 775px;
+    top: -20px;
+    right: 605px;
 }
 
 footer {
-    font-size: 13px;
-    margin-top: 20px;
-    color: #000000;
-    display: flex;   
-    justify-content: center;  
-    align-items: center;  
-    flex-wrap: wrap; 
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: -10px;
-}
-
-footer p {
-    font-size: 13px;
-    color: #000000;
-    margin-bottom: -200px;
-    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 
-footer span {
-    font-size: 13px;
+footer p, footer span {
+    font-size: 12px;
     color: #000000;
-    margin-bottom: -225px;
-    margin-top: -200px;
-    padding: 10px;
+    margin: 5px 0;
+    padding: 5px 0;
 }
 
 .password-input-container {
@@ -188,8 +181,8 @@ footer span {
 
 .eye-icon {
     position: absolute;
-    right: -10px;
-    top: 65%;
+    right: 40px;
+    top: 67%;
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 23px;
@@ -201,4 +194,46 @@ footer span {
     align-items: center;
     gap: 10px;
     margin-top: 13px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-card {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .input-group input,
+    .input-group-cap input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .input-group label,
+    .input-group-cap label {
+        margin-left: 0;
+    }
+
+    .button.login-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pkss-logo {
+        width: 150px;
+        right: 10px;
+    }
+
+    .logo1,
+    .logo2 {
+        width: 150px;
+        right: 10px;
+    }
+
+    footer p,
+    footer span {
+        margin: 0;
+        padding: 10px;
+        min-height: 50px;
+    }
 }
